@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PT Serif', serif;
+	padding: 100px;
+}
+
+#videos {
+	width: 49%;
+	float: right;
+	padding: 10px;
+	height: 90vh;
+	display: table;
+}
+
+video {
+	/*display: inline-block;*/
+	padding: 5px;
+	margin: 0px;
+	max-width: 100%;
+	/*max-height: 100%;*/
+	/*object-fit: cover;*/
+	/*display: table-cell;*/
+	/*float: left;*/
+}
+
+video:hover {
+	cursor: pointer;
+}
+
+#text {
+	width: 50%;
+	float: left;
+}
+
+#actions {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#controllers {
+	width: 100%;
+}
+
+h2 {
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: grey;
+}
+
+button {
+	font-size: 35px;
+	word-spacing: -1px;
+	height: 50px;
+	font-family: serif;
+	border: none;
+	font-style: italic;
+}
+
+button:hover {
+	color: blue;
+}
+
+button:focus {
+	/*color: blue;*/
+	outline: none;
+}
+
+.viableButton {
+	color: lightgrey;
+}
+
+.selectedController {
+	color: blue;
+}
+
+.selectedAction {
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+

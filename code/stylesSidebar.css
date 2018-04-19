@@ -1,0 +1,169 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Chivo', serif;
+	background-color: rgba(0, 0, 0, 0.0);
+	/*background-color: #db761e;*/
+}
+
+#content {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: inline-block;
+}
+
+#titleBlock {
+	height: 30vh;
+	padding: 5%;
+	border: 1px solid black;
+}
+
+#text {
+	height: 70vh;
+	width: 50vw;
+	padding: 0 5%;
+	z-index: 20;
+	float: left;
+}
+
+#text h2 {
+	font-family: 'Chivo';
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: lowercase;
+	color: black;
+	border-bottom: 4px solid black;
+	height: 33px;
+	margin-bottom: 20px;
+}
+
+#controllers {
+	width: 47%;
+	float: left;
+	margin-right: 3%;
+}
+
+#actions {
+	width: 47%;
+	float: right;
+	/*margin-right: 3%;*/
+}
+
+button {
+	font-size: 16px;
+	word-spacing: -1px;
+	padding: 0 10px;
+	height: 40px;
+	font-family: 'Chivo';
+	font-weight: 100;
+	border: none;
+	border: 1px solid black;
+	font-style: italic;
+	margin: 3px;
+	background-color: transparent;
+	color: black;
+	font-weight: 100;
+}
+
+button:hover {
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+}
+
+button:focus {
+	/*color: blue;*/
+	outline: none;
+}
+
+.viableButton {
+	border-color: lightgrey;
+	color: lightgrey;
+}
+
+.selectedController {
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+
+.selectedAction {
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+
+
+#videoContainer {
+	width: 50%;
+	height: 70%;
+	box-sizing: border-box;
+	float: right;
+	overflow: scroll;
+}
+
+#videoContainer h2 {
+	position: fixed;
+	background-color: white;
+	font-family: 'Chivo';
+	font-size: 20px;
+	font-weight: 700;
+	width: 100%;
+	/*text-transform: uppercase;*/
+	color: black;
+	border-bottom: 4px solid black;
+	height: 33px;
+}
+
+#videos {
+	max-width: 80%;
+	float: left;
+	margin-left: 15px;
+	margin-top: 40px;
+}
+
+#miniVideos {
+	float: right;
+	width: 10%;
+	height: 100%;
+	padding: 14px;
+}
+
+#miniVideos button {
+	background-color: transparent;
+	border-radius: 25px;
+	border: 1px solid white;
+	width: 10px;
+	height: 25px;
+	margin: 10px;
+	font-size: 0px;
+}
+
+video {
+	padding: 0px;
+	margin: 30px 0px;
+	max-width: 100%;
+	box-shadow: 0px 0px 20px black;
+	background-color: green;
+	/*max-height: 90vh;*/
+}
+
+video:hover {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
