@@ -5,7 +5,7 @@
 }
 
 body {
-	font-family: 'Chivo', serif;
+	font-family: 'Chivo', sans-serif;
 	background-color: rgba(0, 0, 0, 0.0);
 	/*background-color: #db761e;*/
 }
@@ -22,11 +22,48 @@ body {
 #titleBlock {
 	height: 30vh;
 	padding: 5%;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
+	font-size: 20px;
+}
+
+#titleBlock h2 {
+	display: inline-block;
+    width: 20%;
+    float: left;
+    margin-right: 4%;
+    /*height: 100%;*/
+}
+
+#titleBlock p {
+	display: inline-block;
+	font-family: 'Chivo', sans-serif; 
+	font-weight: 100;
+	font-family: 'Chivo', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 100;
+    width: 22%;
+    margin-top: 5px;
+}
+
+#titleBlock #loadingScreen {
+	width: 25%;
+	height: 100%;
+	/*background-color: grey;*/
+	float: right;
+}
+
+#bodyBlock {
+	width: 100%;
+	margin: 0;
+	height: 70vh;
+	/*display: none;*/
+	/*pointer-events: none;*/
+	overflow: scroll;
 }
 
 #text {
-	height: 70vh;
+	position: fixed;
 	width: 50vw;
 	padding: 0 5%;
 	z-index: 20;
@@ -57,7 +94,7 @@ body {
 }
 
 button {
-	font-size: 16px;
+	font-size: 15px;
 	word-spacing: -1px;
 	padding: 0 10px;
 	height: 40px;
@@ -66,7 +103,7 @@ button {
 	border: none;
 	border: 1px solid black;
 	font-style: italic;
-	margin: 3px;
+	margin: 2px;
 	background-color: transparent;
 	color: black;
 	font-weight: 100;
@@ -102,8 +139,8 @@ button:focus {
 
 
 #videoContainer {
+	display: inline-block;
 	width: 50%;
-	height: 70%;
 	box-sizing: border-box;
 	float: right;
 	overflow: scroll;
@@ -113,9 +150,8 @@ button:focus {
 	position: fixed;
 	background-color: white;
 	font-family: 'Chivo';
-	font-size: 20px;
 	font-weight: 700;
-	width: 100%;
+	width: 45%;
 	/*text-transform: uppercase;*/
 	color: black;
 	border-bottom: 4px solid black;
@@ -123,27 +159,50 @@ button:focus {
 }
 
 #videos {
-	max-width: 80%;
+	max-width: 78%;
 	float: left;
 	margin-left: 15px;
-	margin-top: 40px;
+	margin-top: 25px;
+}
+
+#vidTitle {
+	font-style: italic;
+	/*color: black;*/
+	/*background-color: transparent;*/
+	font-size: 18px;
+	font-weight: 100 !important;
+}
+
+/*.normal {
+	font-size: 20px !important;
+}*/
+
+.small {
+	font-size: 16px !important;
+}
+
+.blackHighlight {
+	background-color: black !important;
+	color: white !important; 
+	font-weight: 300;
 }
 
 #miniVideos {
-	float: right;
-	width: 10%;
-	height: 100%;
-	padding: 14px;
+	position: fixed;
+    right: 2%;
+    width: 3%;
+    margin-right: 4%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 25px;
 }
 
 #miniVideos button {
-	background-color: transparent;
-	border-radius: 25px;
-	border: 1px solid white;
-	width: 10px;
-	height: 25px;
-	margin: 10px;
-	font-size: 0px;
+	border: 1px solid black;
+    width: 5px;
+    height: 5px;
+    margin: 10px;
+    font-size: 0px;
 }
 
 video {
@@ -151,7 +210,8 @@ video {
 	margin: 30px 0px;
 	max-width: 100%;
 	box-shadow: 0px 0px 20px black;
-	background-color: green;
+	border: 3px solid black;
+	background-color: white;
 	/*max-height: 90vh;*/
 }
 
