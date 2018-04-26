@@ -76,7 +76,7 @@ function tagSelected(button) {
 	// Make all buttons grey
 	$('button').addClass("viableButton");
 	$('video').hide();
-	$('#miniVideos').hide();
+	// $('#miniVideos button').hide();
 	var videos; 
 
 	if(!selectedController && !selectedAction) {
@@ -117,9 +117,18 @@ function tagSelected(button) {
 
 	videos.show();
 
+	// for (var v in videos) {
+	// 	if (typeof(videos[v].id) !== 'undefined') {
+	// 		// console.log(videos[v].id, $("#miniVideos button[id='videos[v].id']"))
+	// 		$("#miniVideos button[id='+videos[v].id+'']").show();
+	// 	}
+	// }
+
+
+
 	$(this).toggleClass("viableButton");
 
-	$('#miniVideos').empty();
+	$('#miniVideos button').hide();
 	for (var i = 0; i < videos.length; i++) {
 		var vidButton = $('<button>', {
 			class: "vidButton",
@@ -143,9 +152,9 @@ function loadVideos(videoArr) {
 				action: videoArr[v][2].split(" ").join(""),
 				controller: videoArr[v][1].split(" ").join(""),
 				name: videoArr[v][0],
+				id: v,
 				caption: "using " + videoArr[v][4] + " to play " + videoArr[v][3]
 			})
-			
 			video.appendTo($('#videos'));
 			video.show();
 			video.on("loadeddata", function() {
@@ -153,7 +162,6 @@ function loadVideos(videoArr) {
 				buffer = jQuery.grep(buffer, function(value) {
 				  return value[0] != name;
 				});
-				// console.log(buffer);
 			});
 	}
 
@@ -200,13 +208,13 @@ for (var i = 0; i < $('video').length; i++) {
 		class: "vidButton",
 		id: i
 	})
-	
+	vidButton.click(function(event) {
+		console.log(this.id)
+		$(this).addClass("black");
+	})
 	vidButton.appendTo($('#miniVideos'));
 }
 
-// $('#miniVideos button').click(() => {
-// 	console.log(this.attr(id))
-// })
 
 
 
